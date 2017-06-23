@@ -18,7 +18,6 @@ pipeline {
     stage('second') {
       agent {
           docker {
-               image 'webmaestro365/jenkinssshslave'
                label 'lemony2jenkins'
           }
       }
