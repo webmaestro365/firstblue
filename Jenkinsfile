@@ -17,7 +17,9 @@ pipeline {
     }
     stage('second') {
       agent {
-          label 'lemony2jenkins'
+          docker {
+               label 'lemony2jenkins'
+          }
       }
       steps {
         echo 'hehe'
