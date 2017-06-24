@@ -23,5 +23,13 @@ pipeline {
         echo 'hehe'
       }
     }
+    stage('third') {
+      agent {
+          label 'lemony3jenkins'
+      }
+      steps {
+          echo 'JNLP ahoy'
+      }
+    }
   }
 }
