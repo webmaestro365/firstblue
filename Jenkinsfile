@@ -17,7 +17,7 @@ pipeline {
     }
     stage('second') {
       agent {
-          label 'lemony2jenkins'
+          label 'lemony3jenkins||lemony2jenkins'
       }
       steps {
         echo 'hehe'
@@ -25,7 +25,7 @@ pipeline {
     }
     stage('third') {
       agent {
-          label 'lemony3jenkins'
+          label 'lemony2jenkins||lemony3jenkins'
       }
       steps {
           echo 'JNLP ahoy'
